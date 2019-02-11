@@ -66,6 +66,8 @@
 		B1E861F71F21519900621BA0 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E861F51F21518700621BA0 /* Layout.swift */; };
 		B1E861F91F21520200621BA0 /* ComposedProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E861F81F21520200621BA0 /* ComposedProvider.swift */; };
 		B1ED75B51F58C95200CB772A /* StickyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ED75B41F58C95200CB772A /* StickyLayout.swift */; };
+		DE7DB0B7221208DC00E0A555 /* YetAnotherAnimationLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7DB0B6221208DC00E0A555 /* YetAnotherAnimationLibrary.framework */; };
+		DEBA9ADC2212084700176201 /* WobbleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B144CE121F437AB70073CF4E /* WobbleAnimator.swift */; };
 		E7734B091C2A8AF2D7C94E40 /* Pods_CollectionKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18407FD826F3703406A838D4 /* Pods_CollectionKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,6 +151,7 @@
 		B1E861F51F21518700621BA0 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		B1E861F81F21520200621BA0 /* ComposedProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedProvider.swift; sourceTree = "<group>"; };
 		B1ED75B41F58C95200CB772A /* StickyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyLayout.swift; sourceTree = "<group>"; };
+		DE7DB0B6221208DC00E0A555 /* YetAnotherAnimationLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YetAnotherAnimationLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7DB0B7221208DC00E0A555 /* YetAnotherAnimationLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +186,7 @@
 		68326A23531A63253BA9DC91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE7DB0B6221208DC00E0A555 /* YetAnotherAnimationLibrary.framework */,
 				18407FD826F3703406A838D4 /* Pods_CollectionKitTests.framework */,
 			);
 			name = Frameworks;
@@ -590,6 +595,7 @@
 				A3066AAF2176997F00467E3C /* ComposedHeaderProvider+Convenience.swift in Sources */,
 				B1E861F41F21517400621BA0 /* DataSource.swift in Sources */,
 				A3C76C1F20D10817003082BF /* LayoutableProvider.swift in Sources */,
+				DEBA9ADC2212084700176201 /* WobbleAnimator.swift in Sources */,
 				B157E5181F66FEE5008AEF83 /* OverlayLayout.swift in Sources */,
 				B1688A291F2562AC00C229BD /* SimpleViewProvider.swift in Sources */,
 				B1E861F91F21520200621BA0 /* ComposedProvider.swift in Sources */,
