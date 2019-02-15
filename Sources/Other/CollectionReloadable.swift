@@ -59,6 +59,9 @@ extension UIScrollView {
   @objc func collectionKitAdjustContentOffsetIfNecessary(_ animated: Bool) {
     guard !(self is CollectionView) || !isDragging && !isDecelerating else { return }
     self.perform(#selector(CollectionView.collectionKitAdjustContentOffsetIfNecessary))
+    if #available(iOS 11.0, *) {
+      self.contentOffset.y = -self.adjustedContentInset.top
+    }
   }
 
   static func swizzleAdjustContentOffset() {
