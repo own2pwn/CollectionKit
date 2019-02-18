@@ -60,7 +60,7 @@ extension UIScrollView {
     guard !(self is CollectionView) || !isDragging && !isDecelerating else { return }
     self.perform(#selector(CollectionView.collectionKitAdjustContentOffsetIfNecessary))
     if #available(iOS 11.0, *) {
-      self.contentOffset.y = -self.adjustedContentInset.top
+      //self.contentOffset.y = self.adjustedContentInset.top
     }
   }
 
