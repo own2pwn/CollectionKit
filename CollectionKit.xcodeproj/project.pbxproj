@@ -79,6 +79,27 @@
 			remoteGlobalIDString = B1B7B04F1E7DAD1E00F2483E;
 			remoteInfo = CollectionKit;
 		};
+		DE63B8AA2316AAF500E34E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B1D0B47C1E89C479000B0E24;
+			remoteInfo = Examples;
+		};
+		DE63B8AC2316AAF500E34E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B197CE171E8B660F004495AE;
+			remoteInfo = YetAnotherAnimationLibrary;
+		};
+		DE63B8DC2316AAFE00E34E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B197CE161E8B660F004495AE;
+			remoteInfo = YetAnotherAnimationLibrary;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +172,7 @@
 		B1E861F51F21518700621BA0 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		B1E861F81F21520200621BA0 /* ComposedProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedProvider.swift; sourceTree = "<group>"; };
 		B1ED75B41F58C95200CB772A /* StickyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyLayout.swift; sourceTree = "<group>"; };
+		DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = YetAnotherAnimationLibrary.xcodeproj; sourceTree = "<group>"; };
 		DE7DB0B6221208DC00E0A555 /* YetAnotherAnimationLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YetAnotherAnimationLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -244,6 +266,7 @@
 		A3FC21BB1C6EE5AA008566BB = {
 			isa = PBXGroup;
 			children = (
+				DE63B8692316A9E500E34E77 /* lib */,
 				B14ABA2B1FE2DC1B005D889A /* README.md */,
 				A33E637320D7957200BC6D2C /* v2_migration.md */,
 				A3DDEED01C7D893D0053BFAE /* Sources */,
@@ -372,6 +395,31 @@
 			path = CollectionKitTests;
 			sourceTree = SOURCE_ROOT;
 		};
+		DE63B8692316A9E500E34E77 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DE63B86A2316AAF500E34E77 /* YetAnotherAnimationLibrary */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DE63B86A2316AAF500E34E77 /* YetAnotherAnimationLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */,
+			);
+			path = YetAnotherAnimationLibrary;
+			sourceTree = "<group>";
+		};
+		DE63B8712316AAF500E34E77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE63B8AB2316AAF500E34E77 /* Examples.app */,
+				DE63B8AD2316AAF500E34E77 /* YetAnotherAnimationLibrary.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -418,6 +466,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DE63B8DD2316AAFE00E34E77 /* PBXTargetDependency */,
 			);
 			name = CollectionKit;
 			productName = CollectionKit;
@@ -452,12 +501,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = A3FC21BB1C6EE5AA008566BB;
 			productRefGroup = A3FC21BB1C6EE5AA008566BB;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DE63B8712316AAF500E34E77 /* Products */;
+					ProjectRef = DE63B8702316AAF500E34E77 /* YetAnotherAnimationLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B1B7B04F1E7DAD1E00F2483E /* CollectionKit */,
@@ -465,6 +521,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DE63B8AB2316AAF500E34E77 /* Examples.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Examples.app;
+			remoteRef = DE63B8AA2316AAF500E34E77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE63B8AD2316AAF500E34E77 /* YetAnotherAnimationLibrary.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YetAnotherAnimationLibrary.framework;
+			remoteRef = DE63B8AC2316AAF500E34E77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B12F9B1F1E804C370085F37D /* Resources */ = {
@@ -620,6 +693,11 @@
 			isa = PBXTargetDependency;
 			target = B1B7B04F1E7DAD1E00F2483E /* CollectionKit */;
 			targetProxy = B12F9B271E804C370085F37D /* PBXContainerItemProxy */;
+		};
+		DE63B8DD2316AAFE00E34E77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YetAnotherAnimationLibrary;
+			targetProxy = DE63B8DC2316AAFE00E34E77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
